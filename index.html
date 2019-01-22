@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>个人简历</title>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.nav-item.active {
+				border-bottom: 1px solid white;
+			}
+		
+		</style>
+	</head>
+
+	<body class="bg-light">
+		<div class="position-fixed w-100" style="z-index: 100;">
+			<ul id="menu" class="nav bg-dark">
+				<li data-menuanchor="page1" class="nav-item">
+					<a class="nav-link" href="#page1"><span class="text-white">个人简介</span></a>
+				</li>
+				<li data-menuanchor="page2" class="nav-item">
+					<a class="nav-link" href="#page2"><span class="text-white">专业技能</span></a>
+				</li>
+				<li data-menuanchor="page3" class="nav-item">
+					<a class="nav-link" href="#page3"><span class="text-white">工作经历</span></a>
+				</li>
+				<li data-menuanchor="page4" class="nav-item">
+					<a class="nav-link" href="#page4"><span class="text-white">项目经验</span></a>
+				</li>
+			</ul>
+		</div>
+		<div id="" class="container px-3" style="padding-top: 40px;">
+			<div id="dowebok">
+				<div class="section">
+					<div style="height: 500px;">
+					<h3 class="mb-5">周振宇</h3>
+					<div class="row no-gutters mb-3">
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">职业:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">Web前端工程师</div>
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">工作单位:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">上海固艾软件技术有限公司</div>
+					</div>
+					<div class="row no-gutters mb-3">
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">年龄:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">28</div>
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">工作经验:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">2.5年</div>
+					</div>
+					<div class="row no-gutters mb-3">
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">邮箱:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">
+							<a href="mailto:1556597051@qq.com">1556597051@qq.com</a>
+						</div>
+						<div class="col-4 col-sm-2 mb-3 mb-sm-0">所在地:</div>
+						<div class="col-8 col-sm-4 mb-3 mb-sm-0">上海</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-4 col-sm-2">个人标签</div>
+						<div class="col-8 col-sm-10">
+							<span class="badge badge-primary">性格随和</span>
+							<span class="badge badge-primary">严谨认真</span>
+							<span class="badge badge-primary">学习能力强</span>
+							<span class="badge badge-primary">富有责任心</span>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="section">
+					<h3>前端</h3>
+					<div class="row">
+						js,h5,css3,jq,bs,react,vue,require.js,dojo,webpack,gulp
+					</div>
+					<h3>后端</h3>
+					<div class="row">
+						node,express,
+						java,springmvc,mybais,mysql
+					</div>
+				</div>
+				<div class="section">
+					<h3>工作经历</h3>
+					<p>职位/公司</p>
+				</div>
+				<div class="section">
+					<h3>项目经验</h3>
+					<p>项目名/角色/技术栈</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+					anchors: ['page1', 'page2', 'page3', 'page4'],
+					menu: '#menu',
+					'navigation': true,
+				});
+			});
+		</script>
+	</body>
+
+</html>
