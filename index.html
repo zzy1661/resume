@@ -8,13 +8,31 @@
 		<title>个人简历</title>
 		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="lib/iconfont/iconfont.css">
 		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			.nav-item.active {
 				border-bottom: 1px solid white;
 			}
-		
+			.iconfont {
+				font-size: 60px;
+			}
+			.w-sm {
+				width: 60px;
+			}
+			.w-md {
+				width: 120px;
+			}
+			.w-lg {
+				width: 240px;
+			}
+			.h-500 {
+				min-height: 500px;
+			}
+			.h-200 {
+				min-height: 200px;
+			}
 		</style>
 	</head>
 
@@ -38,7 +56,7 @@
 		<div id="" class="container px-3" style="padding-top: 40px;">
 			<div id="dowebok">
 				<div class="section">
-					<div style="height: 500px;">
+					<div class="h-500">
 					<h3 class="mb-5">周振宇</h3>
 					<div class="row no-gutters mb-3">
 						<div class="col-4 col-sm-2 mb-3 mb-sm-0">职业:</div>
@@ -73,18 +91,96 @@
 				</div>
 				<div class="section">
 					<h3>前端</h3>
-					<div class="row">
-						js,h5,css3,jq,bs,react,vue,require.js,dojo,webpack,gulp
+					<div class="d-flex flex-wrap text-primary h-200">
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-js"></i><span>JS</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-HTML"></i><span>HTML</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-CSS"></i><span>CSS</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-jquery"></i><span>jQuery</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-bootstrap"></i><span>Bootstrap</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-dojo"></i><span></span>Dojo
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-vue"></i><span>Vue</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-react"></i><span>React</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-webpack"></i><span>Webpack</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-fe-gulp"></i><span>Gulp</span>
+						</p>
 					</div>
 					<h3>后端</h3>
-					<div class="row">
-						node,express,
-						java,springmvc,mybais,mysql
+					<div class="d-flex flex-wrap text-primary h-200">
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-java"></i><span>Java</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-spring"></i><span>SpringMVC</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-node"></i><span>Node</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-ex"></i><span>Express</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-mysql"></i><span>MySql</span>
+						</p>
+						<p class="d-flex flex-column align-items-center px-4">
+							<i class="iconfont icon-mongoDB"></i><span>MongoDB</span>
+						</p>
 					</div>
 				</div>
 				<div class="section">
-					<h3>工作经历</h3>
-					<p>职位/公司</p>
+					<div class="h-500">
+						<h3>工作经历</h3>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-transparent border-0">
+								<div class="d-flex">
+									<span class="w-md mr-1 mr-md-4">2018.7~2019.2</span>
+									<span class="w-lg mr-1 mr-md-4">上海固艾软件技术有限公司</span>
+									<span class="d-none d-sm-inline mr-1 mr-md-4">前端<span class="d-none d-md-inline">开发工程师</span></span>
+								</div>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<div class="d-flex">
+									<span class="w-md mr-1 mr-md-4">2018.2~2018.6</span>
+									<span class="w-lg mr-1 mr-md-4">华服互联网科技(上海)有限公司</span>
+									<span class="d-none d-sm-inline mr-1 mr-md-4">前端<span class="d-none d-md-inline">开发工程师</span></span>
+								</div>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<div class="d-flex">
+									<span class="w-md mr-1 mr-md-4">2016.9~2017.12</span>
+									<span class="w-lg mr-1 mr-md-4">江苏蓝深远望科技股份有限公司</span>
+									<span class="d-none d-sm-inline mr-1 mr-md-4">Web全栈<span class="d-none d-md-inline">开发、Gis开发工程师</span></span>
+								</div>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<div class="d-flex">
+									<span class="w-md mr-1 mr-md-4">2014.6~2016.6</span>
+									<span class="w-lg mr-1 mr-md-4">中国银行</span>
+									<span class="d-none d-sm-inline mr-1 mr-md-4">综合柜员</span>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+					
 				</div>
 				<div class="section">
 					<h3>项目经验</h3>
